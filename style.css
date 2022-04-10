@@ -75,7 +75,7 @@ a {
 /* projects */
 #projects {
     background: var(--blue);
-    padding: 2rem 1rem;
+    padding: 10rem 2rem;
     text-align: center;
 }
 .projects-header {
@@ -86,11 +86,11 @@ a {
 .projects-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-    grid-gap: 2rem;
+    grid-gap: 4rem;
     width: 100%;
     max-width: 1280px;
     margin: 0 auto;
-    margin-bottom: 2rem;
+    margin-bottom: 6rem;
 }
 .project {
     background: var(--gray);
@@ -112,10 +112,34 @@ a {
 }
 .project-name {
     font-size: 2rem;
-    padding: 1rem 0.5rem
+    padding: 2rem 0.5rem
 }
 
+.btn {
+    display: inline-block;
+    padding: 1rem 2rem;
+    border-radius: 5px;
+}
 
+.btn-show-all {
+    font-size: 2rem;
+    background: var(--gray);
+    transition: 0.3s ease-out;
+}
+  
+  .btn-show-all:hover {
+    background: var(--red);
+}
+  
+  .btn-show-all:hover > i {
+    transform: translateX(2px);
+}
+  
+  .btn-show-all > i {
+    margin-left: 10px;
+    transform: translateX(0);
+    transition: transform 0.3s ease-out;
+}
 
 
 
